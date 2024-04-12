@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marking.ai assessment builder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="content-container">
+    <header>
+        <div class="logo-container">
+            <img src="markingai_logo_primary.png" alt="Marking.ai Logo" class="logo">
+        </div>
+        <div class="title-container">
+            <h1>Marking.ai Assessment Builder</h1>
+            <p class="subtitle">Create your student assessment and instructions to marker files that can be uploaded to the Marking.ai platform.</p>
+        </div>
+    </header>
+  </div>
+<div class="container mt-5">
+
+    <form id="questionForm" action="/submit-form" method="post">
+        <div id="sectionsContainer"></div>
+        <!-- Remove form-controls from here to avoid duplicate buttons -->
+    </form>
+
+    <!-- Place footer outside the container -->
+</div>
+
+<footer class="sticky-footer bg-light">
+    <div class="container text-center">
+        <button type="button" onclick="addQuestion()" class="btn btn-primary">Add New Question</button>
+        <button type="submit" form="questionForm" class="btn btn-success">Create Instructions to Marker PDF</button>
+        <button type="button" id="createStudentAssessment" class="btn btn-info">Create Student Assessment DOCX</button>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.11/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script> <!-- Link to the client-side JavaScript file -->
+
+</body>
+</html>

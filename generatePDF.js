@@ -15,7 +15,7 @@ function createPDFStream(formData) {
         let marks = formData.marks[index];
 
         // Format for teacher's assessment
-        doc.fontSize(12).text(`Question ${number}:`, { paragraphGap: 5 })
+        doc.fontSize(12).text(`Question ${number}`, { paragraphGap: 5 })
           .fontSize(12).text(`Question: ${question} (${marks} marks)`, { paragraphGap: 5 })
           .fontSize(12).text(`Instructions to marker:`, { paragraphGap: 5 })
           .text(`${instruction}`, { paragraphGap: 5, indent: 20 })
